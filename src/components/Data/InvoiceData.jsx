@@ -1,5 +1,3 @@
-import React from "react";
-
 export const InvoiceData = {
   isOpen: false,
   currency: "₹",

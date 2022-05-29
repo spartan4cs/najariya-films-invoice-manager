@@ -1,4 +1,3 @@
-import React from "react";
 
 export const pdfdata = {
   id: "5df3180a09ea16dc4b95f910",

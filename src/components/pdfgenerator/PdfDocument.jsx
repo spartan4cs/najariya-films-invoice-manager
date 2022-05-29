@@ -6,10 +6,15 @@ import InvoiceNo from "./InvoiceNo";
 import InvoiceThankYouMsg from "./InvoiceThankYouMsg";
 import InvoiceTitle from "./InvoiceTitle";
 import logo from "../../logo.svg";
+import hcbgImage from "../../asset/bg-img.jpg";
 
 const styles = StyleSheet.create({
   page: {
-    backgroundColor: "#fff",
+    flex: 1,
+    backgroundColor: "#f5f5f5",
+    /// backgroundImage: `url(${logo})`,
+    //  backgroundImage:"url('https://media.geeksforgeeks.org/wp-content/uploads/rk.png')",
+    // backgroundSize: "cover",
     fontFamily: "Helvetica",
     fontSize: 11,
     paddingTop: 30,
@@ -30,7 +35,7 @@ const PdfDocument = ({ invoicedata }) => {
   return (
     <Document>
       <Page size="A4" style={styles.page}>
-        <Image style={styles.logo} src={logo} />
+        <Image style={styles.logo} src={hcbgImage} />
         <InvoiceTitle title={"Invoice"} />
         <InvoiceNo invoice={invoicedata} />
         <BillTo invoice={invoicedata} />
