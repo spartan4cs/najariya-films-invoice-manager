@@ -5,6 +5,7 @@ import Card from "./UI/Card";
 import { InvoiceData } from "./Data/InvoiceData";
 import { PDFDownloadLink, PDFViewer } from "@react-pdf/renderer";
 import PdfDocument from "./pdfgenerator/PdfDocument";
+import { pdfdata } from "./Data/pdfdata";
 
 const Main = (props) => {
   const initialInvoiceData = InvoiceData;
@@ -126,12 +127,12 @@ const Main = (props) => {
       </Card>
 
       <PDFViewer width={800} height={500} showToolbar={false}>
-        <PdfDocument invoicedata={InvoiceData} />
+        <PdfDocument invoicedata={pdfdata} />
       </PDFViewer>
 
       <div className="download-link">
         <PDFDownloadLink
-          document={<PdfDocument invoicedata={InvoiceData} />}
+          document={<PdfDocument invoicedata={pdfdata} />}
           fileName={fileName}
         >
           {({ blob, url, loading, error }) =>

@@ -1,4 +1,6 @@
-const InvoiceData = {
+import React from "react";
+
+export const pdfdata = {
   id: "5df3180a09ea16dc4b95f910",
   invoice_no: "201906-28",
   balance: "$2,283.74",
@@ -31,5 +33,3 @@ const InvoiceData = {
     },
   ],
 };
-
-export default InvoiceData;

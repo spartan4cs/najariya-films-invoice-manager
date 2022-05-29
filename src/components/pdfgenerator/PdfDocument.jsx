@@ -1,10 +1,12 @@
-import { Document, Image, Page } from "@react-pdf/renderer";
+import { Document, Image, Page, StyleSheet } from "@react-pdf/renderer";
 import React from "react";
 import BillTo from "./BillTo";
 import InvoiceItemsTable from "./InvoiceItemsTable";
 import InvoiceNo from "./InvoiceNo";
 import InvoiceThankYouMsg from "./InvoiceThankYouMsg";
 import InvoiceTitle from "./InvoiceTitle";
+import logo from "../../logo.svg";
+
 const styles = StyleSheet.create({
   page: {
     backgroundColor: "#fff",
